@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>BasketBall Scoreboard</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="boardItem">
+            <h3>HOME</h3>
+            <div class="displayContainer">
+                <span class="displayItem home">0</span>
+                <i class="fa-sharp fa-solid fa-crown hidden"></i>
+            </div>
+            <div class="btnContainer homeBtns">
+                <button>+1</button>
+                <button>+2</button>
+                <button>+3</button>
+            </div>
+        </div>
+        <div class="boardItem">
+            <h3>GUEST</h3>
+            <div class="displayContainer">
+                <span class="displayItem guest">0</span>
+                <i class="fa-sharp fa-solid fa-crown hidden"></i>
+            </div>
+            <div class="btnContainer guestBtns">
+                <button>+1</button>
+                <button>+2</button>
+                <button>+3</button>
+            </div>
+        </div>
+        <button class="resetBtn">RESET</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+@font-face {
+    font-family: CursedTimer;
+    src: url('CursedTimer.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mainContainer {
+    background-color: #1B244A;
+    max-width: 600px;
+    min-width: 360px;
+    margin-inline: auto;
+    padding: 68px 0 69px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 50px;
+}
+
+.mainContainer .boardItem h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+
+
+.mainContainer .boardItem .displayContainer .displayItem,
+.mainContainer .boardItem .btnContainer button,
+.mainContainer .resetBtn {
+    font-family: CursedTimer;
+}
+
+.mainContainer .resetBtn {
+    position: absolute;
+    bottom: 15px;
+    color: #F94F6D;
+    background: none;
+    background-color: #080001;
+    border: 2px solid #F94F6D;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 7px 5px 3px;
+    cursor: pointer;
+}
+
+.mainContainer .resetBtn:active {
+    transform: scale(0.96);
+    border-color: #ffe600;
+    color: #ffe600;
+}
+
+.mainContainer .boardItem .displayContainer {
+    background-color: #080001;
+    width: 177px;
+    height: 120px;
+    border-radius: 5px;
+    padding-top: 20px;
+    text-align: center;
+    margin: 21px 0 26px;
+    position: relative;
+}
+
+.mainContainer .boardItem .displayContainer .fa-crown {
+    color: #F94F6D;
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.mainContainer .boardItem .displayContainer .displayItem {
+    color: #F94F6D;
+    font-size: 5.6rem;
+}
+
+.mainContainer .boardItem .btnContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainContainer .boardItem .btnContainer button {
+    background: none;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #9AABD8;
+    width: 45px;
+    height: 45px;
+    padding-top: 3px;
+    transition: transform 100ms ease, border-color 100ms ease, color 100ms ease;
+}
+
+.mainContainer .boardItem .btnContainer button:active {
+    transform: scale(0.95);
+    border-color: #759aff;
+    color: #759aff;
+
+}
+
+.hidden {
+    display: none;
+}
